@@ -1,0 +1,28 @@
+<view class="page">
+  <view class="page__hd">
+    <view class="page__hd_left">
+    <navigator url="../user/user">
+        <image src="../../assets/images/more.png" />
+    </navigator>
+    </view>
+    <view class="page__title">
+      <text>One more time</text>
+    </view>
+  </view>
+  <view class="page__bd">
+    <swiper class='swiper-item__content' current="" bindchange="changeswiper">
+      <swiper-item class="swip">
+        <view class='page__bd_content'> 
+          <image class="slide-image" src="{{tempFilePaths}}" mode="scaleToFill"/> 
+          <view class="name">{{imgwidth}}</view>
+          <view class="age extr3">{{imgheight}}</view>
+        </view>
+      </swiper-item>
+    </swiper>
+  </view> 
+  <view class="page__ft">
+    <image class="notlike {{left?'active':''}}" src="../../assets/images/notlike.png" />
+    <image class="like {{right?'active':''}}" src="../../assets/images/like.png" />
+    
+  </view>
+</view>  
